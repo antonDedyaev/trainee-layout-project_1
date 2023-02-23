@@ -1,0 +1,39 @@
+{
+  "name": "trainee-layout-project_1",
+  "version": "0.1.0",
+  "description": "My 1st layout project for trainee position at Hotels.ru",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonDedyaev/trainee-layout-project_1.git"
+  },
+  "keywords": [
+    "Hotels.ru",
+    "landing",
+    "layout",
+    "scss",
+    "html"
+  ],
+  "author": "Anton Dedyaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonDedyaev/trainee-layout-project_1/issues"
+  },
+  "homepage": "https://github.com/antonDedyaev/trainee-layout-project_1#readme",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.2",
+    "stylelint-scss": "^4.4.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0"
+  }
+}

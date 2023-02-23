@@ -1,2 +1,3 @@
 # trainee-layout-project_1
-My 1st layout for trainee position at Hotels.ru
+
+This is my 1st layout design assignment for trainee position at Hotels.ru
