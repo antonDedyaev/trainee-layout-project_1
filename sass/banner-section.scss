@@ -1,0 +1,33 @@
+.banner {
+    height: 604px;
+
+    background-image: url("../images/main.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.block {
+    &-advertisement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 192px 0;
+
+        color: $white;
+    }
+}
+
+.adv {
+    &-header {
+        margin: 0 0 40px;
+
+        font: 700 48px/56px Roboto, sans-serif;
+    }
+
+    &-text {
+        margin: 0 0 50px;
+
+        line-height: 20px;
+    }
+}
+

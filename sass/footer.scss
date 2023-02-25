@@ -1,0 +1,95 @@
+.footer {
+    &-top {
+        background-color: $white;
+    }
+
+    &-bottom {
+        background-color: $gray;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 120px;
+
+    &-media {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; // на макете в Figma последний логотип имеет отступ слева 16px, я для равномерности везде сделал одинаковый отступ.
+        margin-right: 205px;
+    }
+
+    &-address {
+        margin-right: 105px;
+
+        white-space: nowrap;
+    }
+
+    &-phone {
+        margin-right: 40px;
+
+        font-size: 16px;
+        line-height: 19px;
+        white-space: nowrap;
+    }
+}
+
+.ellipse {
+    display: flex;
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+
+    border: 2px solid $accent;
+    border-radius: 50%;
+
+    img {
+        margin: auto;
+    }
+}
+
+.copyright {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 345px;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+
+    color: $dark-gray;
+
+    font: 12px/14px Roboto, sans-serif;
+
+
+}
+
+@media (max-width: 1239px), (max-width: 1919px) {
+    .contacts {
+        flex-direction: column;
+        height: auto;
+        margin: 10px 0;
+
+        &-media {
+            margin-right: 0;
+        }
+
+        &-address {
+            margin-right: 0;
+        }
+
+        &-phone {
+            margin-top: 0;
+            margin-right: 0;
+        }
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 0;
+        height: auto;
+
+        text-align: center;
+    }
+}
