@@ -1,11 +1,9 @@
 const { src, task,  dest, watch } = require('gulp');
-const ghPages = require('gulp-gh-pages');
+const ghPages = require('gh-pages');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 
 const buildSass = () => {
-  console.log('Компиляция SASS');
-
   return src('src/sass/app.scss')
     .pipe(sass())
     .pipe(dest('src/css/'))
@@ -20,10 +18,8 @@ const browserSyncJob = () => {
   watch('src/sass/*.scss', buildSass);
 };
 
-task('deploy', function() {
-  return src('./src/*')
-    .pipe(ghPages());
-})
+const deployToPages = () => ghPages.publish('src', function(err) {});
 
 exports.build = buildSass;
 exports.server = browserSyncJob;
+exports.deploy = deployToPages;
