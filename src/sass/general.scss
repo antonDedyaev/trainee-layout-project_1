@@ -1,0 +1,136 @@
+@font-face {
+    font-weight: 400;
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+body {
+    margin: 0;
+
+    color: $dark;
+    font: 14px/16px Roboto, sans-serif;
+}
+
+
+.wrapper {
+    align-items: center;
+    margin: 0 405px;
+}
+
+.list {
+    &-unmarked {
+        list-style: none;
+    }
+}
+
+.menu {
+    &-horizontal {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.nav {
+    &-top {
+        gap: 30px;
+        padding: 0;
+    }
+
+    &-main {
+        gap: 40px;
+        padding: 0;
+    }
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    &-plain {
+        color: $dark;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    width: max-content;
+
+    color: #FFF;
+    text-decoration: none;
+
+    background-color: $accent;
+
+    &-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 170px;
+        height: 40px;
+
+        border: 2px solid #FFF;
+        border-radius: 40px;
+    }
+
+    &-purchase {
+        padding: 9px 40px;
+
+        border-radius: 30px;
+    }
+
+    &-map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 166px;
+        height: 31px;
+
+        background: #66C05D;
+        border: 2px solid #FFF;
+        border-radius: 30px;
+    }
+
+    &-callback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 170px;
+        height: 40px;
+
+        color: $black;
+        white-space: nowrap;
+
+        background-color: $white;
+        border: 2px solid $accent;
+        border-radius: 40px;
+    }
+}
+
+.m-0 {
+    margin: 0;
+}
+
+@media (max-width: 1239px) {
+    .wrapper {
+        margin: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .menu {
+        &-horizontal {
+            flex-direction: column;
+            gap: 2px;
+            padding-left: 20px;
+        }
+    }
+}
