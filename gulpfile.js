@@ -1,4 +1,5 @@
-const { src, dest, watch } = require('gulp');
+const { src, task,  dest, watch } = require('gulp');
+const ghPages = require('gulp-gh-pages');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 
@@ -18,6 +19,11 @@ const browserSyncJob = () => {
 
   watch('src/sass/*.scss', buildSass);
 };
+
+task('deploy', function() {
+  return src('./src/*')
+    .pipe(ghPages());
+})
 
 exports.build = buildSass;
 exports.server = browserSyncJob;
