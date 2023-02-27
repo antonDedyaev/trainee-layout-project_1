@@ -1,4 +1,4 @@
-const { src, task,  dest, watch } = require('gulp');
+const { src, dest, watch } = require('gulp');
 const ghPages = require('gh-pages');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
