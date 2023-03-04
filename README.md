@@ -31,5 +31,10 @@ gulp build
 4. Deploy the layout using:
 
 ```sh
-gulp deploy or make deploy
+gulp deploy
+```
+or
+
+```sh
+make deploy
 ```
